@@ -1,0 +1,62 @@
+# depslib dependency file v1.0
+1561679839 source:d:\danielaparcial\parcialdenu\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Venta.h"
+	"parser.h"
+	"funciones.h"
+	"Controller.h"
+
+1561673535 d:\danielaparcial\parcialdenu\linkedlist.h
+
+1561673971 d:\danielaparcial\parcialdenu\venta.h
+
+1561674832 d:\danielaparcial\parcialdenu\parser.h
+
+1561673336 d:\danielaparcial\parcialdenu\funciones.h
+
+1561679075 d:\danielaparcial\parcialdenu\controller.h
+
+1561673336 source:d:\danielaparcial\parcialdenu\funciones.c
+	"validaciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1561675751 d:\danielaparcial\parcialdenu\validaciones.h
+
+1561679839 source:d:\danielaparcial\parcialdenu\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Linkedlist.h"
+
+1561677206 source:d:\danielaparcial\parcialdenu\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Linkedlist.h"
+	"Controller.h"
+	"Venta.h"
+	"funciones.h"
+
+1561675555 source:d:\danielaparcial\parcialdenu\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Venta.h"
+
+1561679924 source:d:\danielaparcial\parcialdenu\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validaciones.h"
+
+1561680193 source:d:\danielaparcial\parcialdenu\venta.c
+	"Venta.h"
+	"validaciones.h"
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+
