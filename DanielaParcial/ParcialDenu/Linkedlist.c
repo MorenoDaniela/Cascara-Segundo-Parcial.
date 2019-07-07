@@ -693,5 +693,26 @@ int ll_count(LinkedList* this, int (*pFunc)(void*))
     return contador;
 }
 
+int ll_acumuladorInt(LinkedList* this, int (*pFunc)(void*))
+{
+    int length;
+    int acumulador = 0;
+    int i;
+    void* pElement;
+    if(this != NULL && pFunc != NULL)
+    {
+        length = ll_len(this);
+        for(i=0;i<length;i++)
+        {
+            pElement = ll_get(this, i);
+            if(pFunc(pElement) != 0)
+            {
+                acumulador=acumulador+pFunc(pElement);
+            }
+        }
+    }
+    return acumulador;
+}
+
 
 #endif // LINKEDLIST_C_INCLUDED

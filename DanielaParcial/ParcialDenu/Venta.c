@@ -235,7 +235,7 @@ int Venta_setCuit(Venta* this,char* cuit)
 {
     int retorno=-1;
 
-    if (this!=NULL && cuit!=NULL)//  && isValidCUIT(cuit)
+    if (this!=NULL && cuit!=NULL && isValidCuit(cuit))//  && isValidCUIT(cuit)
     {
         strcpy(this->cuit,cuit);
         retorno=0;
@@ -259,7 +259,7 @@ int Venta_setFecha(Venta* this,char* fecha)
 {
     int retorno=-1;
 
-    if (this!=NULL && fecha!=NULL)// && isValidFecha(fecha)
+    if (this!=NULL && fecha!=NULL && isValidFecha(fecha))// && isValidFecha(fecha)
     {
         strcpy(this->fecha,fecha);
         retorno=0;

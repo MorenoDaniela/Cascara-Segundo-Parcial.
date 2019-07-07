@@ -60,3 +60,64 @@
 	<stdio.h>
 	<stdlib.h>
 
+1562289046 source:c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\funciones.c
+	"validaciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1562526328 c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\validaciones.h
+
+1562526328 source:c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Linkedlist.h"
+
+1562526328 c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\linkedlist.h
+
+1562289046 source:c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Linkedlist.h"
+	"Controller.h"
+	"Venta.h"
+	"funciones.h"
+
+1562523920 c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\controller.h
+
+1562289046 c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\venta.h
+
+1562289046 c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\funciones.h
+
+1562289046 source:c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Venta.h"
+
+1562526328 source:c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validaciones.h"
+
+1562526365 source:c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\venta.c
+	"Venta.h"
+	"validaciones.h"
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+
+1562526343 source:c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Venta.h"
+	"parser.h"
+	"funciones.h"
+	"Controller.h"
+
+1562289046 c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\parser.h
+

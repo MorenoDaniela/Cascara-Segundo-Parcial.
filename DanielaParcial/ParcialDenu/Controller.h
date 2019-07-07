@@ -8,6 +8,9 @@ int controller_ListVenta(LinkedList* pArrayListVenta);
 int controller_saveAsTextInformes(char* path , LinkedList* pArrayListVenta);
 
 int cantidadFotos(LinkedList* pArrayList);
+
+int TotalFotos (void* p);
+
 int montoMayor300(void* p);
 int montoMayor150(void* p);
 int PolaroidReveladas(void* p);

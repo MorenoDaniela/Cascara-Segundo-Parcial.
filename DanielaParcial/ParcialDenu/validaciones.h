@@ -18,5 +18,6 @@ int isValidEmail(char* cadena);
 int isEmail(char* cadena);
 int isValidAlphanumeric(char* stringRecibido);
 int isValidCUIT(char* stringRecibido);
+int isValidCuit(char *cadena);
 
 #endif // VALIDACIONES_H_INCLUDED

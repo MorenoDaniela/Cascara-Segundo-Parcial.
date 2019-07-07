@@ -326,6 +326,20 @@ int isValidFecha(char *cadena)
     return retorno;
 }
 
+int isValidCuit(char *cadena)
+{
+    int retorno=TRUE;
+    int i;
+    for(i=0;cadena[i]!='\0';i++)
+    {
+        if((cadena[i]<'0' || cadena[i]>'9') && (cadena[i]!= '-' ))
+        {
+            retorno=FALSE;
+        }
+    }
+    return retorno;
+}
+
 int isValidCUIT(char* stringRecibido)
 {
     int retorno=1;  // para las funciones isValid arranco con verdadero y cambio cuando encuentro un error

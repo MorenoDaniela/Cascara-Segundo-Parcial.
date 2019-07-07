@@ -81,6 +81,7 @@ int controller_saveAsTextInformes(char* path , LinkedList* pArrayListVenta)
     int retorno = -1;
     int totalPolaroid=0;
     int totalFotos=0;
+    int total=0;
     int ventasMayor150=0;
     int ventasMayor300=0;
     //int totalpolaroid=0;
@@ -96,7 +97,7 @@ int controller_saveAsTextInformes(char* path , LinkedList* pArrayListVenta)
         if(pFile != NULL)
         {
             totalFotos=cantidadFotos(pArrayListVenta);
-
+            total=ll_acumuladorInt(pArrayListVenta,TotalFotos);
             ventasMayor150=ll_count(pArrayListVenta,montoMayor150);
             ventasMayor300=ll_count(pArrayListVenta,montoMayor300);
             totalPolaroid=ll_count(pArrayListVenta,PolaroidReveladas);
@@ -105,6 +106,7 @@ int controller_saveAsTextInformes(char* path , LinkedList* pArrayListVenta)
             //printf ("Total polaroid: %d",Polaroid);
             fprintf(pFile, "*****************************\nInforme de Ventas\n*****************************\n");
             fprintf(pFile, "- Cantidad Total de fotos: %d\n", totalFotos);
+            fprintf(pFile, "- Cantidad Total de fotos: %d\n", total);
             fprintf(pFile, "- Cantidad de ventas por un monto mayor a $150: %d \n",ventasMayor150);
             fprintf(pFile, "- Cantidad de ventas por un monto mayor a $300: %d \n",ventasMayor300);
             fprintf(pFile, "- Cantidad de polaroids: %d\n", totalPolaroid);
@@ -123,6 +125,19 @@ int controller_saveAsTextInformes(char* path , LinkedList* pArrayListVenta)
     return retorno;
 }
 
+int TotalFotos (void* p)
+{
+    int retorno = 0;
+    int cantidad=0;
+    Venta* auxVenta = (Venta*)p;
+
+    if (auxVenta!=NULL)
+    {
+        Venta_getCantidad(auxVenta,&cantidad);
+        retorno=cantidad;
+    }
+    return retorno;
+}
 int cantidadFotos(LinkedList* pArrayList)
 {
     int retorno=-1;
