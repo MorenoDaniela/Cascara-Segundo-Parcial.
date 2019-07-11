@@ -82,6 +82,8 @@ int controller_saveAsTextInformes(char* path , LinkedList* pArrayListVenta)
     int totalPolaroid=0;
     int totalFotos=0;
     int total=0;
+    float probar=0;//forma 1 con funcion ll_acumuladorFloat
+    float cantidad=0;//forma 2 normal
     int ventasMayor150=0;
     int ventasMayor300=0;
     //int totalpolaroid=0;
@@ -98,6 +100,8 @@ int controller_saveAsTextInformes(char* path , LinkedList* pArrayListVenta)
         {
             totalFotos=cantidadFotos(pArrayListVenta);
             total=ll_acumuladorInt(pArrayListVenta,TotalFotos);
+            probar=ll_acumuladorFloat(pArrayListVenta,probarFloat);//forma 1
+            cantidad=cantidadImporte(pArrayListVenta);//forma 2
             ventasMayor150=ll_count(pArrayListVenta,montoMayor150);
             ventasMayor300=ll_count(pArrayListVenta,montoMayor300);
             totalPolaroid=ll_count(pArrayListVenta,PolaroidReveladas);
@@ -107,6 +111,8 @@ int controller_saveAsTextInformes(char* path , LinkedList* pArrayListVenta)
             fprintf(pFile, "*****************************\nInforme de Ventas\n*****************************\n");
             fprintf(pFile, "- Cantidad Total de fotos: %d\n", totalFotos);
             fprintf(pFile, "- Cantidad Total de fotos: %d\n", total);
+            fprintf(pFile, "- Cantidad Total de importe: %.2f\n", probar);//forma 1
+            fprintf(pFile, "- Cantidad Total de importe: %.2f\n", cantidad);//forma 2
             fprintf(pFile, "- Cantidad de ventas por un monto mayor a $150: %d \n",ventasMayor150);
             fprintf(pFile, "- Cantidad de ventas por un monto mayor a $300: %d \n",ventasMayor300);
             fprintf(pFile, "- Cantidad de polaroids: %d\n", totalPolaroid);
@@ -138,6 +144,22 @@ int TotalFotos (void* p)
     }
     return retorno;
 }
+
+float probarFloat (void* p)
+{
+    float retorno = 0;
+    float importe=0;
+    Venta* auxVenta = (Venta*)p;
+
+    if (auxVenta!=NULL)
+    {
+        Venta_getImporte(auxVenta,&importe);
+        retorno=importe;
+    }
+    //printf ("%.2f \n",importe);
+    return retorno;
+}
+
 int cantidadFotos(LinkedList* pArrayList)
 {
     int retorno=-1;
@@ -157,6 +179,31 @@ int cantidadFotos(LinkedList* pArrayList)
             }
             retorno=acumulador;
             //printf("Acumulador: %d",acumulador);
+        }
+
+    }
+    return retorno;
+}
+
+float cantidadImporte(LinkedList* pArrayList)
+{
+    float retorno=-1;
+    int i;
+    float importe=0;
+    float acumulador=0;
+
+    if (pArrayList!=NULL)
+    {
+        Venta* pAux;
+        for (i=0;i<ll_len(pArrayList);i++)
+        {
+            pAux=ll_get(pArrayList,i);
+            if(Venta_getImporte(pAux,&importe)==0)
+            {
+                acumulador = importe+acumulador;
+            }
+            retorno=acumulador;
+            //printf("Acumulador: %f",acumulador);
         }
 
     }

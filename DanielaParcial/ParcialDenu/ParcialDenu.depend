@@ -68,13 +68,13 @@
 
 1562526328 c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\validaciones.h
 
-1562526328 source:c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\linkedlist.c
+1562869158 source:c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\linkedlist.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"Linkedlist.h"
 
-1562526328 c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\linkedlist.h
+1562869158 c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\linkedlist.h
 
 1562289046 source:c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\main.c
 	<stdio.h>
@@ -84,7 +84,7 @@
 	"Venta.h"
 	"funciones.h"
 
-1562523920 c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\controller.h
+1562869652 c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\controller.h
 
 1562289046 c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\venta.h
 
@@ -109,7 +109,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1562526343 source:c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\controller.c
+1562869458 source:c:\users\pc\desktop\cascara-segundo-parcial.-master\danielaparcial\parcialdenu\controller.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

@@ -10,6 +10,10 @@ int controller_saveAsTextInformes(char* path , LinkedList* pArrayListVenta);
 int cantidadFotos(LinkedList* pArrayList);
 
 int TotalFotos (void* p);
+float probarFloat (void* p);
+
+float cantidadImporte(LinkedList* pArrayList);
+
 
 int montoMayor300(void* p);
 int montoMayor150(void* p);
